@@ -1,7 +1,14 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavBar";
+import Hero from "../components/Hero";
+import Card from "../components/Card";
 
 export default function App (){
     return(
-        <Navbar/> 
+        <div>
+            <Navbar/>
+            <Hero/>
+            <Card/> 
+        </div>
+     
     )
 }
