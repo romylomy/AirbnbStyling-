@@ -44,6 +44,7 @@ nav {
 }
 
 section{
+  justify-self: center;
   padding: 20px;
 }
 
@@ -71,6 +72,3 @@ section{
   font-size: 12px; 
 }
 
-.card--image{
-
-}
