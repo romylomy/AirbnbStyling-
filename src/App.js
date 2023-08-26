@@ -13,15 +13,15 @@ export default function App (){
     return(
         <div>
             <Navbar/>
-            <div className="hero-container"> 
-               <Hero/>
-            </div>
-         
-            
-            <div className="cards-list">
-               <h1>Courses</h1>
+            <Hero/>
+          <div className= "hero--background">
+              <div className="cards-list">
+                <h1>Courses</h1>
                 {AthleteCards}
-            </div> 
+              </div> 
+
+          </div>
+            
             <Header/>
 
         </div>

@@ -32,64 +32,79 @@ code {
 }
 
 nav {
-  height: 70px;
+ 
   display: flex;
-  padding: 20px 36px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
-
+.nav--link{
+  list-style: none;
+  width: 50%; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  
+}
 .nav--logo{
-  max-width: 100px; 
+  max-width: 3.25em; 
 }
 
+.Cards--Section  p { 
+  margin: 0;
+}
 section{
-  margin-left: 100px;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:2em; 
+  margin: 0 auto; 
 }
 
-.hero{
-  display: flex; 
-  flex-direction:column; 
-}
 
 .hero--photo{
-  max-width: 4000px;
+  max-width: 50em;
+  margin: 1em 1em;
+  height: 80%;
   align-self: center;
+  justify-self: flex-start;
+  object-fit: fill;
+}
+
+.hero-text-container{
+  width: 80%;
 }
 
 .hero--header{
-  font-size: xx-large;
-  margin-bottom: 16px; 
+  font-size: 3.25em;
   font-family: poppins, sans-serif;
 }
 
-.hero--text{
-  margin-top: 0px; 
-}
-.text-header-container{
-  
-}
+
 
 .hero-container{
   margin: auto;
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
 .Card {
   width: 175px;
-  font-size: 12px;
-  border: 2px solid rgb(198, 183, 183);
+  border: 2px solid rgb(14, 12, 12);
 }
 
 .card--image{
-  width: 300px; 
-  height: 400px;
+  width: 10.5em; 
+  height: 15em;
   object-fit: cover;
   border-radius: 10%;
 }
 
 .BadgeStyle{
+  z-index: 1;
   position: absolute;
   margin-left: 15px;
   margin-top: 8px; 
@@ -99,37 +114,57 @@ section{
   font-weight: bold;
 }
 
-.card-container p {
-  margin: 0;
-  padding: 0;
-  line-height: 1.2; /* Adjust line height as needed */
+.card-p {
+  width: 90%;
 }
-
+.Cards--Section{
+  border: line bold black; 
+  margin: 0 auto;
+  flex-grow: inherit;
+   
+}
 .cards-list {
-  margin-top: 300px;
-  justify-content: space-evenly;
+  position: relative;
   display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
-  overflow-x: auto;
+  justify-content: flex-start;
+
+  width: 90%;
+  padding: 2rem 2rem;
+  color: rgb(51, 41, 41); 
+  margin: 0 auto;
+  
 }
 
-.description{
-  width: 300px;
+.hero--background{
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(201, 201, 49);
+  margin: 0 auto;
+  
 }
-.Cards--Body{
-  align-content: space-around;
-}
+
+
+
+
 
 .header{ 
   display: flex;
   justify-content: space-between;
 }
 
-@media (max-width: 700px) {
+
+/*
+
+@media (max-width: 1500px) {
   .cards-list  {
-      flex-direction: column; /* Stack card above text on smaller screens */
-      justify-content: center;
-      padding: 2rem 2rem;
+      flex-direction: column; 
+      align-items: center;
   }
+  section  {
+    flex-direction: column; 
+    align-items: center;      
 }
+}
+
+
+*/
