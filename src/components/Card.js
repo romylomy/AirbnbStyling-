@@ -8,16 +8,24 @@ export default function Card({ stats, price, description, title, coverImg, openS
     /* You can add additional flex properties here if needed */
   };
 
-  let BadgeStyle
-   if ( openSpots === 0){
-         BadgeStyle = 'Sold Out'
-   } else{
-        BadgeStyle = 'Online'
-   }
+  let BadgeStyle;
+  let style;
+  
+  if (openSpots === 0) {
+      style = {
+          backgroundColor: "rgb(177, 89, 89)",
+          opacity: "80%",
+      };
+      BadgeStyle = 'Sold Out';
+  } else {
+      BadgeStyle = 'Online';
+  }
+  
 
   return (
-        <div className='Cards--Section'> 
-             {BadgeStyle && <div className="BadgeStyle"> {BadgeStyle}</div>}
+        <div className='Cards--Section'>
+            
+             {BadgeStyle && <div style = {style} className="BadgeStyle"> {BadgeStyle}</div>}
              <img
                 src={coverImg}
                 alt={coverImg}
@@ -28,7 +36,8 @@ export default function Card({ stats, price, description, title, coverImg, openS
                 <span>{stats.rating}</span>
                 <span className='gray'>({stats.reviewCount})</span>
             </div>
-            <p>{title}</p>
+            <p
+             className='card-p'>{title}</p>
             <p><span className="bold"> from ${price}</span> / person</p>
         </div>
        
