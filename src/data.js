@@ -1,16 +1,16 @@
 export default [
     {
         id: 1,
-        title: "Group Mountain Biking",
-        description: "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
-        price: 50,
-        coverImg: "https://www.rei.com/dam/kingman_23832990-46_web_sm.jpeg?t=ea16by9xs",
+        title: "Life Lessons with Katie Zaferes",
+        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        price: 136,
+        coverImg: "https://www.athletespeakers.com/image/optimize/L3N0b3JhZ2UvY2VsZWJyaXRpZXMvMTYyNzQxMDQ5MF9LYXRpZS1aYWZlcmVzLUJhbm5lci0xLmpwZw==/267x367",
         stats: {
-            rating: 4.8,
-            reviewCount: 2
+            rating: 5.0,
+            reviewCount: 6
         },
-        location: "Norway",
-        openSpots: 3,
+        location: "Online",
+        openSpots: 0,
         
     },
     {
