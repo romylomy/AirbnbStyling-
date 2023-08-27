@@ -15,11 +15,21 @@ export default function App (props){
   )
   const [squares, setSquares ] = useState(boxes)
 
+  function Toggle(id) {
+    setSquares(prevState =>
+        prevState.map(square =>
+            square.id === id ? { ...square, on: !square.on } : square
+        )
+    );
+}
+
+
 
   const squareElements = squares.map(square => (
-    <Box {...square}/>
+    <Box {...square}
+          Toggle = {()=>Toggle(square.id)}/>
   ))
-
+ 
 
   
   
@@ -40,6 +50,7 @@ export default function App (props){
           <div>
             {squareElements}
           </div>
+          
           
         </div>
      
