@@ -1,4 +1,5 @@
 import Star1 from './images/Star1.png';
+import { useState } from 'react';
 
 export default function Card({ stats, price, description, title, coverImg, openSpots }) {
   const cardStyle = {
@@ -20,10 +21,18 @@ export default function Card({ stats, price, description, title, coverImg, openS
   } else {
       BadgeStyle = 'Online';
   }
+  const [hover, setHover ] = useState(false)
+
+  const style1 = {
+    backgroundColor: hover ? "blue" : "transparent"
+  }
   
 
   return (
-        <div className='Cards--Section'>
+        <div style ={style1}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+        className='Cards--Section'>
             
              {BadgeStyle && <div style = {style} className="BadgeStyle"> {BadgeStyle}</div>}
              <img
@@ -32,13 +41,15 @@ export default function Card({ stats, price, description, title, coverImg, openS
                 className="card--image"
              />
             <div className="card--stats">
+                <p className='card-p'>{title}</p>
                 <img src={Star1} alt="Star Icon" />
                 <span>{stats.rating}</span>
                 <span className='gray'>({stats.reviewCount})</span>
+                <p><span className="bold"> from ${price}</span> / person</p>
+
+               
             </div>
-            <p
-             className='card-p'>{title}</p>
-            <p><span className="bold"> from ${price}</span> / person</p>
+
         </div>
        
   );

@@ -60,7 +60,8 @@ section{
   align-items: center;
   justify-content: center;
   gap:2em; 
-  margin: 0 auto; 
+  margin:5.5em 0;
+  
 }
 
 
@@ -106,27 +107,40 @@ section{
 .BadgeStyle{
   z-index: 1;
   position: absolute;
-  margin-left: 15px;
-  margin-top: 8px; 
+  margin-left: 10.87rem;
+  margin-top: 0.08rem;
   padding: 2px 4px;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 
 .card-p {
   width: 90%;
+  margin-bottom: 0.25rem; 
+}
+
+.card--stats{
+  padding-top: 1rem;
+}
+
+.course-txt{
+  margin-left: 1em;
 }
 .Cards--Section{
-  border: line bold black; 
-  margin: 0 auto;
-  flex-grow: inherit;
+  border: solid 5px gray;
+  border-radius: 10%;
+  
+  margin: 0 auto; 
+  padding: 1rem 1rem;
    
 }
+
 .cards-list {
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 
   width: 90%;
   padding: 2rem 2rem;
@@ -143,14 +157,16 @@ section{
   
 }
 
-
-
-
-
-.header{ 
-  display: flex;
-  justify-content: space-between;
+.box {
+  display: inline;
+  border: 40px solid rgb(41, 24, 24);
+  margin: 5rem 5rem;
 }
+
+
+
+
+
 
 
 /*
@@ -164,6 +180,12 @@ section{
     flex-direction: column; 
     align-items: center;      
 }
+}
+
+
+.header{ 
+  display: flex;
+  justify-content: space-between;
 }
 
 
