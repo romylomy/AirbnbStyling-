@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Box from "./components/Box";
 import boxes from "./components/boxes";
 import { useState } from "react";
+import Form from "./components/Form";
 
 
 export default function App (props){
@@ -50,7 +51,7 @@ export default function App (props){
           <div>
             {squareElements}
           </div>
-          
+          <Form/> 
           
         </div>
      
